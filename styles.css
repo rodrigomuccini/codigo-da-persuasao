@@ -519,6 +519,13 @@ p:last-child{margin-bottom:0}
     .form__row{grid-template-columns:1fr;gap:1rem;margin-bottom:1rem}
   .hero__cta .btn{width:100%}
   .foot__nav{grid-template-columns:1fr}
+
+  .hero__photo{width:100%}
+  .hero__photo img{object-position:48% 14%;opacity:.4}
+  .hero__photo::before{
+    background:
+      linear-gradient(180deg,var(--ink-900) 0%,rgba(5,8,15,.6) 20%,rgba(5,8,15,.6) 80%,var(--ink-900) 100%);
+  }
 }
 
 @media (prefers-reduced-motion:reduce){
