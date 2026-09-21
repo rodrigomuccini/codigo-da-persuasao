@@ -82,6 +82,24 @@
   }
 
   // -------------------------------------------------------
+  // Turmas: carrosséis infinitos
+  // -------------------------------------------------------
+  var reels = document.querySelectorAll('[data-reel]');
+  if (reels.length) {
+    var fotos = [];
+    for (var n = 1; n <= 27; n++) {
+      fotos.push('assets/turmas/turma-' + String(n).padStart(2, '0') + '.jpg');
+    }
+    reels.forEach(function (reel, i) {
+      var conjunto = i === 0 ? fotos.slice(0, 14) : fotos.slice(13);
+      var html = conjunto.map(function (src) {
+        return '<img src="' + src + '" alt="" loading="lazy">';
+      }).join('');
+      reel.innerHTML = '<div class="reel__track">' + html + html + '</div>';
+    });
+  }
+
+  // -------------------------------------------------------
   // Depoimento em vídeo 2: reproduzir a 1,5x
   // -------------------------------------------------------
   var video2 = document.getElementById('video-depoimento-2');

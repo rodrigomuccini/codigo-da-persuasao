@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Família protegida por um arco de luz, com casa e automóvel">
+  <defs>
+    <linearGradient id="pGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F0D68C"/>
+      <stop offset="100%" stop-color="#B87333"/>
+    </linearGradient>
+    <radialGradient id="pGlow" cx="50%" cy="40%" r="46%">
+      <stop offset="0" stop-color="#D9B451" stop-opacity=".3"/>
+      <stop offset="100%" stop-color="#D9B451" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="500" fill="#070B16"/>
+  <ellipse cx="200" cy="230" rx="175" ry="160" fill="url(#pGlow)"/>
+
+  <!-- arcos de proteção -->
+  <g fill="none" stroke="#D9B451" stroke-linecap="round">
+    <path d="M52 330a148 148 0 0 1 296 0" stroke-width="2.4" opacity=".92"/>
+    <path d="M84 330a116 116 0 0 1 232 0" stroke-width="1.4" opacity=".5" stroke-dasharray="7 9"/>
+    <path d="M116 330a84 84 0 0 1 168 0" stroke-width="1.1" opacity=".3" stroke-dasharray="4 8"/>
+  </g>
+  <g fill="#F0D68C">
+    <circle cx="52" cy="330" r="4"/><circle cx="348" cy="330" r="4"/><circle cx="200" cy="182" r="5"/>
+  </g>
+
+  <!-- família: dois adultos e uma criança -->
+  <g fill="url(#pGold)" opacity=".95">
+    <circle cx="160" cy="262" r="15"/>
+    <path d="M160 282c-17 0-29 12-29 28v58h58v-58c0-16-12-28-29-28z"/>
+    <circle cx="244" cy="262" r="15"/>
+    <path d="M244 282c-17 0-29 12-29 28v58h58v-58c0-16-12-28-29-28z"/>
+    <circle cx="202" cy="300" r="11"/>
+    <path d="M202 314c-12 0-21 9-21 21v33h42v-33c0-12-9-21-21-21z"/>
+  </g>
+
+  <!-- linha de base -->
+  <path d="M60 370h280" stroke="#D9B451" stroke-width="1.2" opacity=".45"/>
+
+  <!-- casa -->
+  <g fill="none" stroke="#D9B451" stroke-width="1.8" stroke-linejoin="round" opacity=".8">
+    <path d="M78 432v-34l30-24 30 24v34z"/>
+    <path d="M70 400l38-30 38 30"/>
+    <path d="M100 432v-20h16v20"/>
+  </g>
+
+  <!-- automóvel -->
+  <g fill="none" stroke="#D9B451" stroke-width="1.8" stroke-linejoin="round" opacity=".8">
+    <path d="M258 428v-14l10-20h52l14 20v14z"/>
+    <path d="M272 394l6-12h38l8 12"/>
+    <circle cx="278" cy="432" r="7"/>
+    <circle cx="318" cy="432" r="7"/>
+  </g>
+
+  <g fill="#D9B451" opacity=".35">
+    <circle cx="70" cy="140" r="1.8"/><circle cx="330" cy="132" r="1.6"/><circle cx="200" cy="96" r="2"/>
+    <circle cx="44" cy="238" r="1.5"/><circle cx="358" cy="246" r="1.7"/>
+  </g>
+</svg>
