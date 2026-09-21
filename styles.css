@@ -290,26 +290,17 @@ p:last-child{margin-bottom:0}
 }
 
 /* =========================================================
-   TEMAS (ilustrações)
+   TEMAS
    ========================================================= */
-.sec--themes{padding-block:clamp(56px,7vw,96px)}
-.themes{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,26px)}
-.theme{
-  margin:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
-  background:linear-gradient(170deg,rgba(217,180,81,.05),rgba(10,16,32,.4));
-  transition:border-color .45s var(--ease),transform .45s var(--ease);
+.sec--themes{padding-block:clamp(50px,6vw,84px)}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,36px)}
+.pillar{padding-left:1.4rem;border-left:1px solid var(--line)}
+.pillar b{
+  display:block;font-family:var(--serif);font-size:1.35rem;font-weight:600;
+  color:var(--gold-hi);margin-bottom:.35rem;letter-spacing:-.01em;
 }
-.theme:hover{border-color:var(--gold-dim);transform:translateY(-4px)}
-.theme img{display:block;width:100%;height:auto}
-.theme figcaption{
-  padding:1rem 1.1rem 1.15rem;border-top:1px solid var(--line);text-align:center;
-}
-.theme figcaption b{
-  display:block;font-family:var(--serif);font-size:1.08rem;font-weight:600;
-  color:var(--gold-hi);margin-bottom:.22rem;
-}
-.theme figcaption span{
-  display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.13em;
+.pillar span{
+  display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;
   text-transform:uppercase;color:var(--tx-3);
 }
 
@@ -355,11 +346,11 @@ p:last-child{margin-bottom:0}
 }
 
 .testi-shots{
-  display:grid;grid-template-columns:repeat(2,minmax(0,300px));justify-content:center;
-  align-items:start;gap:clamp(18px,2.2vw,28px);
+  display:grid;grid-template-columns:repeat(3,minmax(0,240px));justify-content:center;
+  align-items:start;gap:clamp(16px,2vw,24px);
 }
 .testi-shot{
-  max-width:300px;margin-inline:auto;width:100%;padding:8px;
+  max-width:240px;margin-inline:auto;width:100%;padding:8px;
   border:1px solid var(--gold-dim);border-radius:var(--r);
   background:linear-gradient(155deg,rgba(217,180,81,.1),rgba(10,16,32,.5));
   box-shadow:0 20px 40px -26px rgba(0,0,0,.85);
@@ -498,7 +489,7 @@ p:last-child{margin-bottom:0}
 @media (max-width:1080px){
   .strip__in{grid-template-columns:1fr}
   .skills{grid-template-columns:repeat(2,1fr)}
-    .themes{grid-template-columns:repeat(2,1fr)}
+    .pillars{grid-template-columns:repeat(2,1fr)}
   .nav__links{display:none}
 }
 @media (max-width:900px){
